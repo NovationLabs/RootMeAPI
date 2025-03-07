@@ -42,7 +42,7 @@ def scraping_rootme(username):
         "userPercent": userPercent
     }
 
-@app.route('/api/rootme', methods=['GET'])
+@app.route('/api', methods=['GET'])
 def get_rootme_stats():
     username = request.args.get('username')
     if not username:
